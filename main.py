@@ -1,3 +1,4 @@
+# Added scaling factor support for overlays
 from __future__ import annotations
 
 import argparse
