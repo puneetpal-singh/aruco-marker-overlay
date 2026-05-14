@@ -1,11 +1,27 @@
 # ArUco Marker Overlay
 
-OpenCV script that detects ArUco markers in images and overlays a poster image onto each detected marker using a perspective transform.
+Computer-vision utility that detects ArUco markers in images and overlays a poster or planar graphic onto each marker using homography-based perspective warping.
 
-## Run
+## What It Demonstrates
+
+- ArUco marker detection with OpenCV
+- Corner extraction and marker-local coordinate handling
+- Homography estimation for perspective-correct image overlay
+- Batch image processing for repeatable visual output
+
+## Typical Workflow
 
 ```powershell
-python main.py --input-dir "D:\M\Projects\aruco-data\images" --poster "D:\M\Projects\aruco-data\poster.jpg" --output-dir "D:\M\Projects\aruco-data\output"
+python main.py `
+  --input-dir "path\to\input-images" `
+  --poster "path\to\poster.jpg" `
+  --output-dir "path\to\outputs"
 ```
 
-Input images and generated outputs are excluded.
+## Repository Scope
+
+This repository keeps the overlay script and project structure lightweight. Input images, generated outputs, and local data folders are intentionally excluded from Git.
+
+## Skills Shown
+
+`Python` | `OpenCV` | `ArUco` | `Homography` | `Perspective Transform` | `Image Processing`
